@@ -1,0 +1,30 @@
+#include<stdio.h>  
+#include<conio.h>  
+int main()  
+{  
+int num, rem, sum = 0,count=0 ,i;  
+printf("Enter a number\n");
+count++;  
+scanf("%d", &num); 
+count++; 
+count++;      
+for(i = 1; i < num; i++)  
+   {  count++; 
+        rem = num % i;
+		count++; 
+		count++;   
+            if (rem == 0)  
+            {  
+                sum = sum + i;  
+                count++; 
+            }  
+   }  
+   count++; 
+   count++; 
+if (sum == num)  
+    printf(" is a Perfect Number");    
+else  
+	printf(" not a Perfect Number \n");  
+    count++; 
+printf("time complexity:%d");
+}  
