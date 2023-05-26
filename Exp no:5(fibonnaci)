@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main() 
+{
+
+  int i, n;
+  int t1 = 0, t2 = 1,count=0;
+  int nextTerm = t1 + t2;
+  count++;
+  printf("Enter the number of terms: ");
+  count++;
+  scanf("%d", &n);
+  count++;
+  printf("Fibonacci Series: %d, %d,", t1, t2);
+  count++;
+  count++;
+  for (i = 3; i <= n; ++i) 
+  { 
+  count++;
+    printf("%d, nextTerm");
+    count++;
+    t1 = t2;
+    count++;
+    t2 = nextTerm;
+    count++;
+    nextTerm = t1 + t2;
+    count++;
+  }
+  count++;
+  printf("The Time complexity : %d \n");
+}
